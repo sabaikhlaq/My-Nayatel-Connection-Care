@@ -1,0 +1,703 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T17:21:35+00:00",
+  "title": "Design System: Connection Care (MyNayatel app extension)",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "primary",
+        "displayName": "MyNayatel Navy",
+        "canonical": "#284f94",
+        "tonalRamp": [
+          "#010922",
+          "#0e2349",
+          "#244073",
+          "#3b60a0",
+          "#5b82c5",
+          "#84a6e0",
+          "#aecafa",
+          "#e6efff"
+        ]
+      },
+      "navy-hero": {
+        "role": "primary",
+        "displayName": "Hero Navy",
+        "canonical": "#3f609e",
+        "tonalRamp": [
+          "#020a1f",
+          "#132444",
+          "#29416d",
+          "#426099",
+          "#6282be",
+          "#89a6d9",
+          "#b2caf5",
+          "#e6efff"
+        ]
+      },
+      "navy-deep": {
+        "role": "primary",
+        "displayName": "Deep Navy",
+        "canonical": "#1f3f7a",
+        "tonalRamp": [
+          "#020a1f",
+          "#122445",
+          "#28416d",
+          "#416099",
+          "#6182be",
+          "#88a6d9",
+          "#b2caf5",
+          "#e6efff"
+        ]
+      },
+      "orange": {
+        "role": "secondary",
+        "displayName": "Action Orange",
+        "canonical": "#e87b1e",
+        "tonalRamp": [
+          "#1b0300",
+          "#3d1a00",
+          "#663204",
+          "#954a02",
+          "#c56403",
+          "#e28e54",
+          "#fdb88a",
+          "#ffeadd"
+        ]
+      },
+      "orange-press": {
+        "role": "secondary",
+        "displayName": "Pressed Orange",
+        "canonical": "#cf6a12",
+        "tonalRamp": [
+          "#1c0300",
+          "#3e1900",
+          "#683000",
+          "#924c13",
+          "#c2661c",
+          "#df8f5b",
+          "#fab98f",
+          "#feeade"
+        ]
+      },
+      "orange-ink": {
+        "role": "secondary",
+        "displayName": "Orange Ink",
+        "canonical": "#b85a08",
+        "tonalRamp": [
+          "#1d0200",
+          "#3f1800",
+          "#6a2f00",
+          "#954a0e",
+          "#bf682b",
+          "#dc9062",
+          "#f8b994",
+          "#ffeade"
+        ]
+      },
+      "orange-wash": {
+        "role": "secondary",
+        "displayName": "Orange Wash",
+        "canonical": "#fff7ef",
+        "tonalRamp": [
+          "#0d0b08",
+          "#282421",
+          "#46413c",
+          "#66605a",
+          "#88817a",
+          "#aaa49e",
+          "#cdc8c3",
+          "#f1eeea"
+        ]
+      },
+      "peach": {
+        "role": "secondary",
+        "displayName": "Peach",
+        "canonical": "#ffeede",
+        "tonalRamp": [
+          "#0f0a06",
+          "#2b231c",
+          "#4a4036",
+          "#6c5f52",
+          "#8e8072",
+          "#afa397",
+          "#d1c7be",
+          "#f5ede6"
+        ]
+      },
+      "ember-on-navy": {
+        "role": "secondary",
+        "displayName": "Ember on Navy",
+        "canonical": "#f19a4b",
+        "tonalRamp": [
+          "#1a0500",
+          "#3a1c00",
+          "#623502",
+          "#904e00",
+          "#b96d20",
+          "#d6955d",
+          "#f3bd91",
+          "#ffeadb"
+        ]
+      },
+      "badge-blue": {
+        "role": "secondary",
+        "displayName": "Badge Blue",
+        "canonical": "#4a6fb5",
+        "tonalRamp": [
+          "#020921",
+          "#112347",
+          "#274071",
+          "#3e5f9e",
+          "#5e81c3",
+          "#86a5de",
+          "#b0caf9",
+          "#e6efff"
+        ]
+      },
+      "badge-orange": {
+        "role": "secondary",
+        "displayName": "Badge Orange",
+        "canonical": "#ec8a35",
+        "tonalRamp": [
+          "#1a0400",
+          "#3d1a00",
+          "#633409",
+          "#904d0c",
+          "#bf6913",
+          "#dc9158",
+          "#f8ba8d",
+          "#ffeadc"
+        ]
+      },
+      "sky": {
+        "role": "neutral",
+        "displayName": "Sky",
+        "canonical": "#e5eeff",
+        "tonalRamp": [
+          "#090b10",
+          "#21252d",
+          "#3d424c",
+          "#5a616f",
+          "#7b8391",
+          "#9fa5b1",
+          "#c4c9d3",
+          "#eaeff6"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "canonical": "#f3f8fe",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5e6266",
+          "#7f8388",
+          "#a2a5aa",
+          "#c6c9cd",
+          "#eceff1"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1b1d22",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242528",
+          "#404246",
+          "#5f6167",
+          "#808288",
+          "#a3a5aa",
+          "#c7c9cd",
+          "#edeef2"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#4a5566",
+        "tonalRamp": [
+          "#080b11",
+          "#1f252e",
+          "#3a424f",
+          "#576272",
+          "#788394",
+          "#9ca6b4",
+          "#c2cad6",
+          "#e9eff8"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#5c6778",
+        "tonalRamp": [
+          "#080b11",
+          "#20252e",
+          "#3b424f",
+          "#586271",
+          "#788393",
+          "#9ca6b4",
+          "#c2cad5",
+          "#e9eff8"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "#e2e8f1",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#232529",
+          "#3f4248",
+          "#5d6269",
+          "#7e838a",
+          "#a1a5ac",
+          "#c6c9cf",
+          "#eceff3"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Line Strong",
+        "canonical": "#c9d3e2",
+        "tonalRamp": [
+          "#080b10",
+          "#21252c",
+          "#3c424c",
+          "#5a626e",
+          "#7b8390",
+          "#9ea6b1",
+          "#c4cad3",
+          "#eaeff6"
+        ]
+      },
+      "quiet-fill": {
+        "role": "neutral",
+        "displayName": "Quiet Fill",
+        "canonical": "#eef1f5",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#242527",
+          "#404245",
+          "#5f6164",
+          "#808286",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeef0"
+        ]
+      },
+      "on-navy-2": {
+        "role": "neutral",
+        "displayName": "On-Navy Secondary",
+        "canonical": "#d5e0f3",
+        "tonalRamp": [
+          "#080b11",
+          "#20252e",
+          "#3c424e",
+          "#596271",
+          "#7a8393",
+          "#9da5b3",
+          "#c3c9d5",
+          "#eaeff8"
+        ]
+      },
+      "green": {
+        "role": "tertiary",
+        "displayName": "Working Green",
+        "canonical": "#1d7a35",
+        "tonalRamp": [
+          "#001100",
+          "#022e0e",
+          "#0b501f",
+          "#227335",
+          "#489656",
+          "#77b780",
+          "#a5d8ab",
+          "#d4fad8"
+        ]
+      },
+      "green-soft": {
+        "role": "tertiary",
+        "displayName": "Green Soft",
+        "canonical": "#e3f3e7",
+        "tonalRamp": [
+          "#080c09",
+          "#202722",
+          "#3b453e",
+          "#58655c",
+          "#79867c",
+          "#9da8a0",
+          "#c3ccc5",
+          "#e9f1eb"
+        ]
+      },
+      "mint-on-navy": {
+        "role": "tertiary",
+        "displayName": "Mint on Navy",
+        "canonical": "#8fd6a2",
+        "tonalRamp": [
+          "#001003",
+          "#062d15",
+          "#1b4e2c",
+          "#317046",
+          "#549366",
+          "#80b48d",
+          "#acd5b6",
+          "#d8f8df"
+        ]
+      },
+      "amber-ink": {
+        "role": "tertiary",
+        "displayName": "Attention Amber",
+        "canonical": "#8a4b00",
+        "tonalRamp": [
+          "#1a0500",
+          "#3a1c00",
+          "#623504",
+          "#8b5118",
+          "#af723d",
+          "#cd986d",
+          "#ebbf9d",
+          "#feeadb"
+        ]
+      },
+      "amber-soft": {
+        "role": "tertiary",
+        "displayName": "Amber Soft",
+        "canonical": "#fff1dc",
+        "tonalRamp": [
+          "#0e0a05",
+          "#2a241b",
+          "#494134",
+          "#6a5f4f",
+          "#8c816f",
+          "#aea495",
+          "#d0c8bc",
+          "#f4eee4"
+        ]
+      },
+      "badge-red": {
+        "role": "tertiary",
+        "displayName": "Badge Red",
+        "canonical": "#c4161c",
+        "tonalRamp": [
+          "#220000",
+          "#4e0002",
+          "#810008",
+          "#b3191c",
+          "#dc463f",
+          "#f77a6e",
+          "#ffb3a9",
+          "#fee9e6"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Tracker ETA window; one per screen."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Top-bar screen title and the Fixed celebrate headline."
+      },
+      "headline-sm": {
+        "displayName": "Headline Small",
+        "purpose": "Verdict sentence on the diagnosis hero."
+      },
+      "title-lg": {
+        "displayName": "Title Large",
+        "purpose": "Sub-page bar titles, hero card headings, rating question."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings on a screen."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Headings inside cards."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text, instructions, row names."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Supporting copy, chips, notes."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Filled and outline buttons."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Status chips, captions, timestamps."
+      },
+      "label-sm": {
+        "displayName": "Label Small",
+        "purpose": "Badges, tile CTAs, language toggle."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card",
+        "value": "0 1px 2px rgba(31, 63, 122, 0.06), 0 3px 10px rgba(31, 63, 122, 0.07)",
+        "purpose": "Every white card, tile, payment card and the checking-state verdict."
+      },
+      {
+        "name": "raise",
+        "value": "0 2px 4px rgba(31, 63, 122, 0.08), 0 10px 24px rgba(31, 63, 122, 0.12)",
+        "purpose": "Floating layers only (toast)."
+      },
+      {
+        "name": "hairline-lift",
+        "value": "0 1px 2px rgba(31, 63, 122, 0.04)",
+        "purpose": "Suggestion chips and support category cards."
+      },
+      {
+        "name": "dock-edge",
+        "value": "0 -1px 0 #e2e8f1, 0 -8px 20px rgba(31, 63, 122, 0.06)",
+        "purpose": "Top edge of the sticky action dock."
+      },
+      {
+        "name": "tabbar-edge",
+        "value": "0 -1px 0 #e2e8f1, 0 -6px 16px rgba(31, 63, 122, 0.04)",
+        "purpose": "Top edge of the bottom tab bar."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid #e87b1e; outline-offset: 2px",
+        "purpose": "Global :focus-visible treatment."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Easing for all entrances, pops and the timeline ring."
+      },
+      {
+        "name": "state-change",
+        "value": "0.15s",
+        "purpose": "Button background and shadow transitions; press scale 0.985 over 0.1s."
+      },
+      {
+        "name": "screen-in",
+        "value": "0.32s",
+        "purpose": "New screen slides 18px in from the right while fading from 0.4."
+      },
+      {
+        "name": "pop",
+        "value": "0.35s",
+        "purpose": "Resolved status chip scales in from 0.85; celebrate mark at 0.5s."
+      },
+      {
+        "name": "land",
+        "value": "0.5s",
+        "purpose": "Verdict hero rises 8px into place when the check finishes."
+      },
+      {
+        "name": "ring",
+        "value": "1.8s infinite",
+        "purpose": "Expanding ring on the current timeline dot."
+      },
+      {
+        "name": "toast",
+        "value": "4s",
+        "purpose": "Toast fades in, holds, fades out."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animation and transition durations under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact",
+        "value": "370px"
+      },
+      {
+        "name": "phone-full-bleed",
+        "value": "760px"
+      },
+      {
+        "name": "design-frame",
+        "value": "390x844"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one next action on a screen; orange, 48px, usually full width in the dock.",
+      "html": "<button class=\"ds-btn-primary\">Check my connection</button>",
+      "css": ".ds-btn-primary { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 18px; border: 0; border-radius: 8px; background: #e87b1e; color: #fff; font-size: 16px; font-weight: 500; line-height: 1.25; cursor: pointer; transition: background-color .15s, transform .1s; } .ds-btn-primary:hover { background: #cf6a12; } .ds-btn-primary:active { transform: scale(.985); } .ds-btn-primary:focus-visible { outline: 2px solid #e87b1e; outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary choice beside the primary in the dock.",
+      "html": "<button class=\"ds-btn-outline\">Still not working</button>",
+      "css": ".ds-btn-outline { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 18px; border: 0; border-radius: 8px; background: #fff; color: #b85a08; box-shadow: inset 0 0 0 1.5px #e87b1e; font-size: 16px; font-weight: 500; line-height: 1.25; cursor: pointer; transition: background-color .15s, transform .1s; } .ds-btn-outline:hover { background: #fff7ef; } .ds-btn-outline:active { transform: scale(.985); } .ds-btn-outline:focus-visible { outline: 2px solid #e87b1e; outline-offset: 2px; }"
+    },
+    {
+      "name": "Status Chips",
+      "kind": "chip",
+      "refersTo": "status-ok",
+      "description": "Word + icon + tint diagnosis pills; amber for faults, never red.",
+      "html": "<div class=\"ds-status-row\"><span class=\"ds-status ds-status--ok\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" width=\"16\" height=\"16\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m8 12 3 3 5-6\"/></svg>Working</span><span class=\"ds-status ds-status--bad\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" width=\"16\" height=\"16\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5v5.5M12 16.5v.01\"/></svg>Not responding</span><span class=\"ds-status ds-status--wait\">Waiting</span><span class=\"ds-status ds-status--checking\">Checking</span></div>",
+      "css": ".ds-status-row { display: flex; flex-wrap: wrap; gap: 8px; } .ds-status { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px 4px 7px; border-radius: 999px; font-size: 13px; font-weight: 500; white-space: nowrap; } .ds-status--ok { background: #e3f3e7; color: #1d7a35; } .ds-status--bad { background: #fff1dc; color: #8a4b00; } .ds-status--wait { background: #eef1f5; color: #4a5566; padding-left: 10px; } .ds-status--checking { background: #e5eeff; color: #284f94; padding-left: 10px; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White 14px card with a soft navy-tinted shadow on the pale blue ground.",
+      "html": "<div class=\"ds-ground\"><div class=\"ds-card\"><div class=\"ds-card-title\">Visit details</div><p class=\"ds-card-body\">Someone 18 or older needs to be home during the visit.</p></div></div>",
+      "css": ".ds-ground { background: #f3f8fe; padding: 16px; } .ds-card { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(31,63,122,.06), 0 3px 10px rgba(31,63,122,.07); color: #1b1d22; } .ds-card-title { font-size: 15.5px; font-weight: 500; } .ds-card-body { margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #4a5566; }"
+    },
+    {
+      "name": "Verdict Hero",
+      "kind": "custom",
+      "refersTo": "verdict-hero",
+      "description": "Navy diagnosis hero with concentric arcs, verdict sentence and facts row.",
+      "html": "<section class=\"ds-verdict\"><svg class=\"ds-arcs\" viewBox=\"0 0 200 200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"18\" aria-hidden=\"true\"><circle cx=\"100\" cy=\"100\" r=\"30\"/><circle cx=\"100\" cy=\"100\" r=\"62\"/><circle cx=\"100\" cy=\"100\" r=\"94\"/></svg><div class=\"ds-verdict-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" width=\"20\" height=\"20\"><rect x=\"3\" y=\"13\" width=\"18\" height=\"7\" rx=\"2\"/><path d=\"M7 16.5h.01M11 16.5h.01M8 9a6 6 0 0 1 8 0M5.5 6.5a9.5 9.5 0 0 1 13 0\"/></svg></div><h2>Your router needs a restart</h2><p>Area network and fibre line are working.</p><div class=\"ds-verdict-facts\"><div><div class=\"k\">Area network</div><div class=\"v\">OK</div></div><div><div class=\"k\">Last checked</div><div class=\"v\">9:41 PM</div></div></div></section>",
+      "css": ".ds-verdict { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; position: relative; overflow: hidden; padding: 18px 16px; border-radius: 18px; background: #3f609e; color: #fff; max-width: 358px; } .ds-arcs { position: absolute; right: -60px; top: -60px; width: 200px; height: 200px; color: rgba(255,255,255,.07); pointer-events: none; } .ds-verdict-icon { position: relative; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; margin-bottom: 12px; background: rgba(255,255,255,.14); } .ds-verdict h2 { position: relative; margin: 0; font-size: 21px; font-weight: 500; line-height: 1.25; text-wrap: balance; } .ds-verdict p { position: relative; margin: 6px 0 0; font-size: 15px; color: #d5e0f3; } .ds-verdict-facts { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.18); } .ds-verdict-facts .k { font-size: 12.5px; color: #d5e0f3; } .ds-verdict-facts .v { font-size: 20px; font-weight: 500; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Health Row",
+      "kind": "custom",
+      "refersTo": "status-attention",
+      "description": "One hop on the path to the home: circular node, name with sub-line, status chip.",
+      "html": "<div class=\"ds-hrow\"><span class=\"ds-hrow-node\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" width=\"20\" height=\"20\"><rect x=\"3\" y=\"13\" width=\"18\" height=\"7\" rx=\"2\"/><path d=\"M7 16.5h.01M11 16.5h.01M8 9a6 6 0 0 1 8 0M5.5 6.5a9.5 9.5 0 0 1 13 0\"/></svg></span><span class=\"ds-hrow-name\">Your router<small>Checked 9:41 PM</small></span><span class=\"ds-hstatus\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" width=\"16\" height=\"16\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5v5.5M12 16.5v.01\"/></svg>Not responding</span></div>",
+      "css": ".ds-hrow { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 12px; padding: 12px 16px; background: #fff; color: #1b1d22; } .ds-hrow-node { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: #fff1dc; color: #8a4b00; } .ds-hrow-name { font-size: 15px; line-height: 1.3; } .ds-hrow-name small { display: block; font-size: 12.5px; color: #5c6778; } .ds-hstatus { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px 4px 7px; border-radius: 999px; font-size: 13px; font-weight: 500; white-space: nowrap; background: #fff1dc; color: #8a4b00; }"
+    },
+    {
+      "name": "Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "48px white field with a Line Strong inset stroke; navy ring on focus.",
+      "html": "<input class=\"ds-input\" type=\"tel\" value=\"0300 0000000\" aria-label=\"Contact number\">",
+      "css": ".ds-input { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; width: 100%; min-height: 48px; padding: 10px 14px; border: 0; border-radius: 10px; background: #fff; color: #1b1d22; box-shadow: inset 0 0 0 1px #c9d3e2; font-size: 16px; font-variant-numeric: tabular-nums; caret-color: #e87b1e; } .ds-input:focus { outline: none; box-shadow: inset 0 0 0 2px #284f94; }"
+    },
+    {
+      "name": "Slot Picker",
+      "kind": "custom",
+      "refersTo": "slot-selected",
+      "description": "Two-column visit slots; selected slot gets an orange ring on Orange Wash.",
+      "html": "<div class=\"ds-slots\" role=\"radiogroup\" aria-label=\"Visit time\"><button class=\"ds-slot\" role=\"radio\" aria-checked=\"true\"><span class=\"d\">Wed</span><span class=\"t\">10 AM–12 PM</span></button><button class=\"ds-slot\" role=\"radio\" aria-checked=\"false\"><span class=\"d\">Wed</span><span class=\"t\">2–4 PM</span></button></div>",
+      "css": ".ds-slots { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; } .ds-slot { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 11px 12px; border: 0; border-radius: 12px; background: #fff; color: #1b1d22; box-shadow: inset 0 0 0 1px #c9d3e2; text-align: left; cursor: pointer; } .ds-slot .d { font-size: 13px; color: #5c6778; } .ds-slot .t { font-size: 15px; font-weight: 500; font-variant-numeric: tabular-nums; } .ds-slot[aria-checked=\"true\"] { background: #fff7ef; box-shadow: inset 0 0 0 2px #e87b1e; } .ds-slot[aria-checked=\"true\"] .d { color: #b85a08; } .ds-slot:focus-visible { outline: 2px solid #e87b1e; outline-offset: 2px; }"
+    },
+    {
+      "name": "Bottom Tab Bar",
+      "kind": "nav",
+      "refersTo": "tabbar",
+      "description": "Incumbent five-tab bar; active tab orange. Inactive grey is the incumbent value and is below AA contrast.",
+      "html": "<nav class=\"ds-tabbar\"><a>Dashboard</a><a>Billing</a><a>Services</a><a aria-current=\"page\">Support</a><a>More<span class=\"ds-new\">New</span></a></nav>",
+      "css": ".ds-tabbar { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: grid; grid-template-columns: repeat(5, 1fr); height: 68px; background: #fff; box-shadow: 0 -1px 0 #e2e8f1, 0 -6px 16px rgba(31,63,122,.04); } .ds-tabbar a { position: relative; display: flex; align-items: center; justify-content: center; font-size: 12.5px; color: #8f98a6; text-decoration: none; cursor: pointer; } .ds-tabbar a[aria-current=\"page\"] { color: #e87b1e; font-weight: 500; } .ds-tabbar a:hover { color: #4a5566; } .ds-new { position: absolute; top: 6px; left: 50%; margin-left: 2px; padding: 1px 6px; border-radius: 999px; background: #c4161c; color: #fff; font-size: 10.5px; font-weight: 500; }"
+    },
+    {
+      "name": "Language Toggle",
+      "kind": "chip",
+      "refersTo": "lang-toggle-active",
+      "description": "EN / UR segmented pill in the sub-page bar; active segment solid navy.",
+      "html": "<div class=\"ds-lang\" role=\"group\" aria-label=\"Language\"><button aria-pressed=\"true\">EN</button><button aria-pressed=\"false\">UR</button></div>",
+      "css": ".ds-lang { display: inline-flex; padding: 2px; border-radius: 999px; background: #fff; box-shadow: inset 0 0 0 1px #e2e8f1; } .ds-lang button { font-family: Roboto, system-ui, -apple-system, \"Segoe UI\", sans-serif; border: 0; background: none; min-width: 38px; padding: 5px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #5c6778; cursor: pointer; } .ds-lang button[aria-pressed=\"true\"] { background: #284f94; color: #fff; } .ds-lang button:focus-visible { outline: 2px solid #e87b1e; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The App They Already Trust",
+    "overview": "This system is not a new world. It is the existing MyNayatel Android app, sampled from screenshots and rebuilt faithfully, with a connection-care flow added in the same voice. A subscriber whose internet has just dropped should never feel they have left the app they know: the same navy hero cards with faint concentric arcs, the same orange call to action, peach usage tiles, light-blue grounds, white rounded cards, round icon badges and a five-tab bottom bar (Dashboard, Billing, Services, Support, More). Existing screens are reproduced unchanged; every new surface is an addition built from the same parts.\n\nThe mood is calm, plain and reassuring rather than technical. Density is that of a utility app on a 390px phone: a 16px gutter, 16px between blocks, generous 48px touch targets, one primary action per screen held in a sticky white dock. Diagnosis is communicated with words first, then icon, then a soft tint, so the user reads \"who is at fault\" before they read a colour. Depth is soft and navy-tinted; nothing glows, nothing is hard-edged.\n\nSelf-hosted Roboto (variable, 100–900) carries all text at two working weights, 400 and 500, matching Android's system face so the extension is indistinguishable from the host app.",
+    "keyCharacteristics": [
+      "Navy hero cards with faint white concentric arcs anchor the top of a screen.",
+      "Orange is the action colour; navy is the structure and selection colour.",
+      "Status is a word-plus-icon pill on a soft tint: green for working, amber for needs attention, never alarm red.",
+      "White rounded cards on a pale blue ground, lifted by soft navy-tinted shadows.",
+      "One primary action per flow screen, pinned in a white bottom dock.",
+      "Bilingual layouts (English and Roman Urdu) that tolerate longer strings."
+    ],
+    "rules": [
+      {
+        "name": "The Two Voices Rule",
+        "body": "Orange means \"do this\"; navy means \"this is selected, this is structure\". A selected tag, toggle or completed step is navy; only the next action and the current step are orange.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Alarm Rule",
+        "body": "Connection status never uses red. A fault is amber with a plain word (\"Not responding\", \"Outage\") and an alert icon. Badge Red stays on the app's \"New\" badge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink for Text Rule",
+        "body": "When orange must be read as text on a light surface, use Orange Ink, not Action Orange.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "New surfaces use sentence case for headings, buttons and chips. The uppercase \"PAYMENT\", \"PAY BILL ONLINE\" and \"START\" are reproductions of the incumbent dashboard and are not a pattern to extend.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Numbers Rule",
+        "body": "Times, ETAs, reference numbers, slot times, fact values and the phone input use tabular figures so values don't jitter when they update.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Dock Rule",
+        "body": "A flow screen has one primary action, pinned in the bottom dock. Secondary choices sit beside it as an outline button or below it as a text button or hint.",
+        "section": "layout"
+      },
+      {
+        "name": "The Navy Shadow Rule",
+        "body": "Shadows are tinted with Deep Navy, never neutral black, and stay soft and blurred. No hard offset shadows.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Concentric Arcs Signature",
+        "body": "Every navy hero carries three concentric rings (radii 30, 62, 94 on a 200 grid, stroke 18) bleeding off one corner at 7% white. On the white checking-state verdict the same arcs drop to 5% navy. This is the app's own motif; reuse it only on hero cards.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do build every new surface from the incumbent parts: navy hero, white 14px card, peach tile, sky tint, round icon badge, orange button.",
+      "Do leave the existing Dashboard and Support layouts as they are; add, don't redesign.",
+      "Do state connection status with a word, an icon and a soft tint together (green working, amber needs attention).",
+      "Do keep one primary orange action per flow screen, in the bottom dock.",
+      "Do use Orange Ink (not Action Orange) for orange text on white or peach.",
+      "Do tint shadows with Deep Navy and keep them soft.",
+      "Do use tabular figures for times, ETAs and reference numbers.",
+      "Do design every string to survive Roman Urdu, which runs longer than English.",
+      "Do honour reduced motion: all animation collapses to near-instant under `prefers-reduced-motion`."
+    ],
+    "donts": [
+      "Don't use red for any connection or diagnosis state; Badge Red belongs only to the app's \"New\" badge.",
+      "Don't put concentric arcs anywhere but a navy (or the checking-state white) hero card.",
+      "Don't introduce uppercase labels or letter-spaced captions on new surfaces; the dashboard's uppercase payment card is incumbent only.",
+      "Don't add a second typeface or weights beyond Roboto 400/500 (600 only on tiny numeric discs and tags).",
+      "Don't use hard offset shadows, neutral black shadows or glows.",
+      "Don't present sample values, policies or branding as official Nayatel material."
+    ]
+  }
+}

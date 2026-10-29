@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#284F94">
+  <title>Connection Care · Hi-fi prototype</title>
+  <meta name="description" content="Connection Care: a proposed self-diagnosis, guided fix and visit-tracking flow for the MyNayatel app. Self-initiated UI/UX case study, not affiliated with Nayatel.">
+  <link rel="preload" href="fonts/roboto-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stage">
+    <aside class="review" id="review" aria-label="Prototype states">
+      <div class="review__head">
+        <h1 class="review__title">Connection Care</h1>
+        <p class="review__sub">Hi-fi prototype of a proposed feature for the MyNayatel app.</p>
+        <p class="review__note">Self-initiated case study, not affiliated with or endorsed by Nayatel. Names, times, reference numbers and amounts are sample data.</p>
+      </div>
+      <div class="review__lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-lang="ur" aria-pressed="false">Roman Urdu</button>
+      </div>
+      <nav class="review__states" id="review-states" aria-label="Jump to a screen or state"></nav>
+    </aside>
+
+    <div class="device">
+      <main class="phone" id="app" aria-live="polite"></main>
+    </div>
+
+    <button type="button" class="review-toggle" id="review-toggle" aria-controls="review" aria-expanded="false">States</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
