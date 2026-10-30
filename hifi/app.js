@@ -34,6 +34,7 @@
     phone: '<path d="M6.5 3.5h3l1.5 4.5-2 1.5a10 10 0 0 0 5.5 5.5l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/>',
     hotspot: '<rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 18.5h3"/><path d="M9.5 9.5a3.5 3.5 0 0 1 5 0M10.9 11.4a1.5 1.5 0 0 1 2.2 0"/>',
     x: '<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>',
+    plus: '<path d="M12 5v14M5 12h14"/>',
     star: '<path d="M12 3.8l2.5 5.2 5.7.8-4.1 4 1 5.7L12 16.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z"/>',
     pencil: '<path d="M4.5 19.5l1-4L16 5a2 2 0 0 1 3 3L8.5 18.5z"/>',
     person: '<circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>',
@@ -81,7 +82,23 @@
     checkingH: ["Checking your connection…", "Aap ka connection check ho raha hai…"],
     checkingP: ["From Nayatel's network to your router, one step at a time. Keep this screen open.", "Nayatel ke network se aap ke router tak, ek ek qadam. Yeh screen khuli rakhein."],
     routerH: ["Your router isn't responding", "Aap ka router jawab nahi de raha"],
-    routerP: ["Nayatel's network and your fibre line are working. The problem is most likely your router.", "Nayatel ka network aur aap ki fibre line theek chal rahi hain. Masla ghaliban aap ke router mein hai."],
+    routerP: ["Nayatel's network and your fibre line look fine from our side, but your router isn't answering our checks. It's the most likely cause.", "Hamari taraf se Nayatel ka network aur aap ki fibre line theek lag rahi hain, lekin aap ka router hamare check ka jawab nahi de raha. Masla ghaliban router mein hai."],
+    checkBasis: ["Checked {t} · based on signals from Nayatel's network and your router", "{t} par check kiya · Nayatel ke network aur aap ke router ke signals ki buniyad par"],
+    failH: ["We couldn't finish the check", "Hum check mukammal nahi kar sake"],
+    failP: ["This doesn't mean something is wrong. Our check service didn't respond. Try again, or report the problem without a check.", "Is ka matlab yeh nahi ke koi kharabi hai. Hamari check service ne jawab nahi diya. Dobara koshish karein, ya check ke baghair shikayat darj karein."],
+    tryAgain: ["Try the check again", "Dobara check karein"],
+    reportNoCheck: ["Report without a check", "Check ke baghair shikayat darj karein"],
+    stUnknown: ["Couldn't check", "Check nahi ho saka"],
+    noetaP: ["A fibre cable was damaged near {area}. Our team is working on it, but we don't have a reliable restore time yet.", "{area} ke qareeb fibre cable kharab ho gayi hai. Hamari team kaam kar rahi hai, lekin abhi bahali ka pakka waqt maloom nahi."],
+    notKnown: ["Not known yet", "Abhi maloom nahi"],
+    updatedP: ["Repairs near {area} are taking longer than planned, so the restore time has changed.", "{area} ke qareeb repair andaze se zyada waqt le rahi hai, is liye bahali ka waqt badal gaya hai."],
+    wasT: ["Was {t}", "Pehle {t}"],
+    updatedAt: ["Updated {t}", "{t} par update hua"],
+    restoredH: ["The outage is fixed, but you're still offline", "Outage theek ho gaya, lekin aap abhi bhi offline hain"],
+    restoredP: ["The network in {area} is back. Something at your end may need attention, so let's check your line and router.", "{area} ka network wapas aa gaya hai. Aap ki taraf kuch dekhna par sakta hai, is liye apni line aur router check karte hain."],
+    checkLineRouter: ["Check my line and router", "Meri line aur router check karein"],
+    healthLastRestored: ["The outage is fixed. Check your line and router.", "Outage theek ho gaya. Apni line aur router check karein."],
+    healthLastFailed: ["The last check didn't finish.", "Pichla check mukammal nahi hua."],
     outageH: ["Outage in your area", "Aap ke area mein outage hai"],
     outageP: ["A fibre cable was damaged near {area}. Our team is fixing it. Nothing is wrong at your home.", "{area} ke qareeb fibre cable kharab ho gayi hai. Hamari team isay theek kar rahi hai. Aap ke ghar mein koi kharabi nahi."],
     expectedBack: ["Expected back by", "Wapas aane ka andaza"],
@@ -119,10 +136,10 @@
     s1c: ["Press it again and give the router 2 minutes to start.", "Dobara dabayein aur router ko start hone ke liye 2 minute dein."],
     s1See: ["{POWER} light on and {PON} light steady.", "{POWER} light on aur {PON} light ruki hui (blink nahi)."],
     s1Cap: ["Back of router: ON/OFF button", "Router ka peechla hissa: ON/OFF button"],
-    s2Title: ["Check the fibre cable", "Fibre cable check karein"],
-    s2a: ["Find the thin cable going into the port marked {PON} or {Fibre}.", "Woh patli cable dhoondein jo {PON} ya {Fibre} likhe port mein lagi hai."],
-    s2b: ["Push it in until it clicks. Make sure it isn't bent sharply.", "Isay andar dabayein jab tak click na ho. Dekhein ke cable zyada mur na rahi ho."],
-    s2c: ["Wait 1 minute, then look at the lights.", "1 minute intezar karein, phir lights dekhein."],
+    s2Title: ["Look at the fibre cable", "Fibre cable dekhein"],
+    s2a: ["Find the thin cable going into the port marked {PON} or {Fibre}. Leave it plugged in.", "Woh patli cable dhoondein jo {PON} ya {Fibre} likhe port mein lagi hai. Isay laga rehne dein."],
+    s2b: ["Check that it isn't bent sharply, pinched or pulled tight. Don't unplug it, open the connector or look into its end.", "Dekhein ke cable zyada mur, dab ya khinch to nahi rahi. Isay na nikalein, connector na kholein aur iske sire mein na dekhein."],
+    s2c: ["Look at the lights on the front of the router.", "Router ke saamne wali lights dekhein."],
     s2See: ["{LOS} light off and {PON} light steady. If LOS is blinking red, tap Still not working.", "{LOS} light band aur {PON} light ruki hui. Agar LOS laal blink kar rahi hai to \"Ab bhi band hai\" dabayein."],
     s2Cap: ["Back of router: fibre port and LOS light circled", "Router ka peechla hissa: fibre port aur LOS light"],
     s3Title: ["Check power and cables", "Bijli aur cables check karein"],
@@ -136,6 +153,10 @@
     fixed: ["Fixed", "Theek ho gaya"],
     stillNot: ["Still not working", "Ab bhi band hai"],
     skipReport: ["Skip and report a problem", "Chhorein aur shikayat darj karein"],
+    skipStep: ["Skip this step", "Yeh qadam chhorein"],
+    reportNow: ["Report a problem", "Shikayat darj karein"],
+    comfortNote: ["Not comfortable doing a step? Skip it. Nothing here is required before you report.", "Koi qadam karna mushkil lage to chhor dein. Shikayat se pehle in mein se kuch zaroori nahi."],
+    skippedNote: ["Skipped: {s}", "Chhor diya: {s}"],
     fixedH: ["You're back online", "Aap dobara online hain"],
     fixedP: ["Restarting your router fixed it. We checked again and everything is working.", "Router restart karne se masla hal ho gaya. Hum ne dobara check kiya, sab theek chal raha hai."],
     fixedPn: ["Step {n} fixed it. We checked again and everything is working.", "Qadam {n} se masla hal ho gaya. Hum ne dobara check kiya, sab theek chal raha hai."],
@@ -144,7 +165,16 @@
 
     // complaint
     reportTitle: ["Report a problem", "Shikayat darj karein"],
-    reportIntro: ["We've filled this in from your connection check. Pick a visit time and send.", "Hum ne yeh aap ke connection check se bhar diya hai. Visit ka waqt chunein aur bhej dein."],
+    reportIntro: ["We've filled this in from your connection check. Check the details, pick a time that suits you and send.", "Hum ne yeh aap ke connection check se bhar diya hai. Tafseel dekh lein, apni marzi ka waqt chunein aur bhej dein."],
+    probNoCheck: ["No internet · Not checked", "Internet nahi · Check nahi hua"],
+    probNoCheckP: ["The connection check didn't finish, so the technician will start from the beginning.", "Connection check mukammal nahi hua, is liye technician shuru se dekhe ga."],
+    extra: ["Anything else the technician should know?", "Technician ko kuch aur batana hai?"],
+    optional: ["Optional", "Ikhtiyari"],
+    extraPh: ["For example, which gate to use, or when the problem started", "Maslan kaun sa gate istemal karein, ya masla kab shuru hua"],
+    attach: ["Add a photo of the router lights", "Router ki lights ki photo lagayein"],
+    attached: ["Photo added: {f}", "Photo lag gayi: {f}"],
+    removePhoto: ["Remove photo", "Photo hatayein"],
+    slotNote: ["These are times you can request. We'll confirm the exact visit once a technician is assigned.", "Yeh woh waqt hain jo aap mang sakte hain. Technician muqarrar hone par hum visit ka pakka waqt bata dein ge."],
     problem: ["Problem", "Masla"],
     autoFilled: ["Auto-filled", "Khud bhar gaya"],
     probRouter: ["No internet · Router not responding", "Internet nahi · Router jawab nahi de raha"],
@@ -157,7 +187,7 @@
     tPower: ["Checked power and cables", "Bijli aur cables check kin"],
     triedNone: ["Nothing tried yet. That's fine, the technician will start from the check result.", "Abhi kuch nahi kiya. Koi baat nahi, technician check ke result se shuru karega."],
     remove: ["Remove", "Hatayein"],
-    whenVisit: ["When can a technician visit?", "Technician kab aa sakta hai?"],
+    whenVisit: ["When would you like a visit?", "Aap visit kab chahte hain?"],
     adult: ["Someone 18+ needs to be home.", "Ghar par koi 18 saal se bara mojood hona chahiye."],
     charges: ["Visit charges", "Visit charges"],
     chargesLink: ["See policy", "Policy dekhein"],
@@ -169,10 +199,10 @@
     // sent
     sentTitle: ["Request sent", "Request bhej di gayi"],
     sentH: ["Request sent", "Request bhej di gayi"],
-    sentP: ["We'll assign a technician and tell you who's coming by {t}.", "Hum technician muqarrar kar ke {t} tak bata dein ge ke kaun aa raha hai."],
+    sentP: ["We'll confirm your visit time and tell you who's coming by {t}.", "Hum {t} tak visit ka pakka waqt aur aane wale technician ka naam bata dein ge."],
     refLabel: ["Ref", "Ref"],
     sumProblem: ["Problem", "Masla"],
-    sumVisit: ["Visit", "Visit"],
+    sumVisit: ["Requested time", "Mangi gayi visit"],
     sumTried: ["Steps attached", "Shamil qadam"],
     sumTriedN: ["{n} of 3", "{n} / 3"],
     sumContact: ["Contact", "Rabta"],
@@ -192,9 +222,16 @@
     tlReceived: ["Received", "Mosool hui"],
     tlReceivedW: ["Tue 7:52 PM · Check results and {n} steps tried attached", "Mangal 7:52 PM · Check ka result aur {n} qadam shamil"],
     tlAssigned: ["Technician assigned", "Technician muqarrar"],
-    tlAssignedW: ["Tue 8:30 PM · Visit booked Wed 10 AM–12 PM", "Mangal 8:30 PM · Budh 10 AM–12 PM visit book"],
+    tlAssignedW: ["Tue 8:30 PM · Visit confirmed Wed 10 AM–12 PM", "Mangal 8:30 PM · Budh 10 AM–12 PM visit pakki"],
     tlOnWay: ["On the way", "Raste mein"],
-    tlOnWayW: ["Wed 10:12 AM · Now", "Budh 10:12 AM · Abhi"],
+    tlOnWayW: ["Wed 10:12 AM · Left for your address", "Budh 10:12 AM · Aap ke pate ki taraf rawana"],
+    tlArrived: ["Arrived", "Pohanch gaye"],
+    tlArrivedW: ["Shows when the technician reaches you", "Technician ke pohanchne par yahan nazar aaye ga"],
+    tlLateW: ["Wed 10:58 AM · Running late, new window 11:30 AM–12:15 PM", "Budh 10:58 AM · Der, naya waqt 11:30 AM–12:15 PM"],
+    lateH: ["Running late", "Der ho rahi hai"],
+    lateP: ["New arrival window", "Pohanchne ka naya waqt"],
+    lateWhy: ["The previous job is taking longer than planned. If the new window doesn't suit you, change the visit time.", "Pichla kaam andaze se zyada waqt le raha hai. Agar naya waqt munasib na ho to visit ka waqt badal lein."],
+    callSupport: ["Call support", "Support ko call karein"],
     tlOnWayNext: ["We'll tell you when {name} leaves", "{name} ke nikalte hi hum bata dein ge"],
     tlResolved: ["Resolved", "Hal ho gaya"],
     tlResolvedW: ["You'll confirm it's working", "Aap tasdeeq karein ge ke chal raha hai"],
@@ -204,15 +241,15 @@
     newTime: ["New time · Wednesday", "Naya waqt · Budh"],
     changedAt: ["changed at 9:40 AM", "9:40 AM par badla"],
     why: ["Why", "Wajah"],
-    whyP: ["An earlier repair in your area is taking longer than planned. {name} is still your technician.", "Aap ke area mein pichli repair andaze se zyada waqt le rahi hai. {name} hi aap ke technician hain."],
+    whyP: ["An earlier repair in your area is taking longer than planned. Your request details stay attached to the new visit.", "Aap ke area mein pichli repair andaze se zyada waqt le rahi hai. Aap ki request ki tafseel nayi visit ke sath rahe gi."],
     tlReschedW: ["Rescheduled Wed 9:40 AM · new time 2–4 PM", "Budh 9:40 AM ko badla · naya waqt 2–4 PM"],
     keepTime: ["Keep new time", "Naya waqt rakhein"],
     pickAnother: ["Pick another", "Koi aur waqt"],
     keptToast: ["New time confirmed: Wed 2:00–4:00 PM", "Naya waqt pakka: Budh 2:00–4:00 PM"],
     reopenH: ["Request reopened", "Request dobara khul gayi"],
-    reopenP: ["{name} is coming back. You don't need to fill anything in again.", "{name} wapas aa rahe hain. Aap ko kuch dobara bharne ki zaroorat nahi."],
-    reopenTime: ["Return visit", "Wapsi visit"],
-    tlReopenedW: ["Wed 11:31 AM · You said it's not working yet", "Budh 11:31 AM · Aap ne bataya abhi nahi chal raha"],
+    reopenP: ["We'll arrange another visit. Your check result, the steps you tried and the visit notes are already attached.", "Hum ek aur visit ka intezam karein ge. Aap ka check result, kiye gaye qadam aur visit notes pehle se shamil hain."],
+    reopenTime: ["Proposed return visit", "Wapsi visit ka mujawwaza waqt"],
+    tlReopenedW: ["Wed 11:31 AM · You said it's still not working", "Budh 11:31 AM · Aap ne bataya ab bhi band hai"],
     tlReopened: ["Reopened", "Dobara khuli"],
     tlSameTech: ["Same technician · Today 3:00–4:00 PM", "Wohi technician · Aaj 3:00–4:00 PM"],
 
@@ -223,10 +260,10 @@
     areaShort: ["Area", "Area"],
     lineShort: ["Line", "Line"],
     routerShort: ["Router", "Router"],
-    isWorking: ["Is your internet working now?", "Kya ab aap ka internet chal raha hai?"],
+    isWorking: ["Is your internet working again?", "Kya aap ka internet dobara chal raha hai?"],
     yesWorking: ["Yes, it's working", "Haan, chal raha hai"],
-    notYet: ["Not yet", "Abhi nahi"],
-    notYetNote: ["\"Not yet\" reopens this request with the same technician. Nothing to fill in again.", "\"Abhi nahi\" se yeh request wohi technician ke sath dobara khul jaye gi. Kuch dobara bharna nahi."],
+    notYet: ["Still not working", "Ab bhi band hai"],
+    notYetNote: ["If it's still not working, we'll reopen this request with everything attached. You won't need to fill anything in again.", "Agar ab bhi band hai to hum yeh request sab tafseel ke sath dobara khol dein ge. Aap ko kuch dobara bharna nahi paray ga."],
     howVisit: ["How was the visit?", "Visit kaisi rahi?"],
     rateLabel: ["Rate {n} out of 5", "5 mein se {n}"],
     tagOnTime: ["On time", "Waqt par"],
@@ -261,19 +298,23 @@
   const initial = () => ({
     lang: "en",
     screen: "support",
-    scenario: "router", // router | outage
+    scenario: "router", // router | outage | outage-noeta | outage-updated | restored | failed
     check: "idle", // idle | running | done
     resolvedRows: 0,
     hold: false,
     step: 1,
     stepsTried: [], // "restart" | "fibre" | "power"
+    stepsSkipped: [],
+    note: "",
+    photo: null,
+    noCheck: false,
     fixedAt: null,
     editingTried: false,
     tried: [],
     slot: null,
     phone: SAMPLE.phone,
     notify: false,
-    tracker: "onway", // onway | rescheduled | reopened
+    tracker: "onway", // onway | delayed | rescheduled | reopened
     rating: 0,
     tags: [],
     confirmed: false,
@@ -337,6 +378,8 @@
       after: ["status--wait", "clock", "stAfter"],
       checking: ["status--checking", "spinner", "stChecking"],
       waiting: ["status--wait", "clock", "stWaiting"],
+      unknown: ["status--wait", "info", "stUnknown"],
+      notchecked: ["status--wait", "clock", "notChecked"],
     };
     const [c, ic, k] = map[kind];
     return `<span class="status ${c}">${icon(ic)}${t(k)}</span>`;
@@ -345,8 +388,15 @@
   // final status per row for the active scenario
   function rowResults() {
     if (st.fixedAt) return ["ok", "ok", "ok"];
-    return st.scenario === "outage" ? ["outage", "after", "after"] : ["ok", "ok", "bad"];
+    if (st.scenario === "failed") return ["unknown", "unknown", "unknown"];
+    if (st.scenario === "restored") return ["ok", "notchecked", "notchecked"];
+    return isOutage() ? ["outage", "after", "after"] : ["ok", "ok", "bad"];
   }
+  function isOutage() { return st.scenario.indexOf("outage") === 0; }
+  const MINI = {
+    ok: ["checkCircle", "stWorking"], after: ["clock", "stAfter"], outage: ["alert", "stOutage"], bad: ["alert", "stNot"],
+    unknown: ["info", "stUnknown"], notchecked: ["clock", "notChecked"],
+  };
   function rowStatus(i) {
     const res = rowResults();
     if (st.check === "done") return res[i];
@@ -488,13 +538,15 @@
 
   // EXISTING — Support, with the NEW Connection health card added on top
   screens.support = () => {
-    const lastKey = st.closed || st.fixedAt ? "healthLastOk" : st.check === "done" ? (st.scenario === "outage" ? "healthLastOutage" : "healthLastRouter") : null;
+    const lastKey = st.closed || st.fixedAt ? "healthLastOk" : st.check === "done"
+      ? (isOutage() ? "healthLastOutage" : st.scenario === "restored" ? "healthLastRestored" : st.scenario === "failed" ? "healthLastFailed" : "healthLastRouter")
+      : null;
     const okAll = lastKey === "healthLastOk";
     const mini = [["tower", "area"], ["fibre", "line"], ["router", "router"]];
     const res = okAll ? ["ok", "ok", "ok"] : rowResults();
     const rowsHtml = lastKey
       ? `<div class="health-entry__rows">${mini
-          .map(([ic, k], i) => `<div class="mini-row ${res[i] === "ok" ? "is-ok" : ""}">${icon(res[i] === "ok" ? "checkCircle" : res[i] === "after" ? "clock" : "alert")}<span>${t(k)}</span><span>${t(res[i] === "ok" ? "stWorking" : res[i] === "after" ? "stAfter" : res[i] === "outage" ? "stOutage" : "stNot")}</span></div>`)
+          .map(([ic, k], i) => `<div class="mini-row ${res[i] === "ok" ? "is-ok" : ""}">${icon(MINI[res[i]][0])}<span>${t(k)}</span><span>${t(MINI[res[i]][1])}</span></div>`)
           .join("")}</div>`
       : "";
     const time = lastKey ? t("checkedAt", { t: okAll && st.closed ? "11:24 AM" : SAMPLE.checkTime }) : t("notChecked");
@@ -540,15 +592,25 @@
     let verdict, dock = "";
     if (st.check !== "done") {
       verdict = `<section class="verdict verdict--checking">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("refresh")}</div><h2>${t("checkingH")}</h2><p>${t("checkingP")}</p></section>`;
-    } else if (st.scenario === "outage") {
-      verdict = `<section class="verdict is-landing" aria-live="polite">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("tower")}</div><h2>${t("outageH")}</h2><p>${t("outageP", { area: SAMPLE.area })}</p>
-        <div class="verdict__facts"><div><div class="k">${t("expectedBack")}</div><div class="v">9:15 PM</div></div><div><div class="k">${t("nextUpdate")}</div><div class="v">8:15 PM</div></div></div></section>`;
+    } else if (st.scenario === "failed") {
+      verdict = `<section class="verdict verdict--checking is-landing" aria-live="polite">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("info")}</div><h2>${t("failH")}</h2><p>${t("failP")}</p></section>`;
+      dock = `<div class="dock"><button class="btn btn--primary btn--block" type="button" data-act="retry">${icon("refresh")}${t("tryAgain")}</button><button class="btn-text btn-text--center" type="button" data-act="report-nocheck">${t("reportNoCheck")}</button></div>`;
+    } else if (st.scenario === "restored") {
+      verdict = `<section class="verdict is-landing" aria-live="polite">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("tower")}</div><h2>${t("restoredH")}</h2><p>${t("restoredP", { area: SAMPLE.area })}</p></section>`;
+      dock = `<div class="dock"><button class="btn btn--primary btn--block" type="button" data-act="retry">${icon("refresh")}${t("checkLineRouter")}</button><button class="btn-text btn-text--center" type="button" data-act="report">${t("reportInstead")}</button></div>`;
+    } else if (isOutage()) {
+      const noEta = st.scenario === "outage-noeta", upd = st.scenario === "outage-updated";
+      const para = noEta ? t("noetaP", { area: SAMPLE.area }) : upd ? t("updatedP", { area: SAMPLE.area }) : t("outageP", { area: SAMPLE.area });
+      const back = noEta ? `<div class="v" style="font-size:17px">${t("notKnown")}</div>` : upd ? `<div class="v">10:30 PM</div><div class="eta-old"><span class="sr-only">${t("wasT", { t: "" })}</span>9:15 PM</div>` : `<div class="v">9:15 PM</div>`;
+      const stamp = upd ? `<span class="next">${icon("clock")}${t("updatedAt", { t: "8:15 PM" })}</span>` : "";
+      verdict = `<section class="verdict is-landing" aria-live="polite">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("tower")}</div><h2>${t("outageH")}</h2><p>${para}</p>
+        <div class="verdict__facts"><div><div class="k">${t("expectedBack")}</div>${back}</div><div><div class="k">${t("nextUpdate")}</div><div class="v">${upd ? "9:30 PM" : "8:15 PM"}</div></div></div>${stamp}</section>`;
       dock = `<div class="dock"><button class="btn ${st.notify ? "btn--outline" : "btn--primary"} btn--block" type="button" data-act="notify" aria-pressed="${st.notify}">${st.notify ? icon("check") + t("notifyOn") : icon("bell") + t("notifyMe")}</button><p class="dock__hint">${t("noNeed")}</p></div>`;
     } else {
       verdict = `<section class="verdict is-landing" aria-live="polite">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("router")}</div><h2>${t("routerH")}</h2><p>${t("routerP")}</p></section>`;
       dock = `<div class="dock"><button class="btn btn--primary btn--block" type="button" data-go="fix">${t("fixSteps")}</button><button class="btn-text btn-text--center" type="button" data-act="report">${t("reportInstead")}</button></div>`;
     }
-    const meta = st.check === "done" ? `<p class="reqline">${t("checkedAt", { t: SAMPLE.checkTime })}</p>` : "";
+    const meta = st.check === "done" && st.scenario !== "failed" ? `<p class="reqline">${t("checkBasis", { t: SAMPLE.checkTime })}</p>` : "";
     return `
     <div class="screen">
       ${statusbar}${subbar(t("checkTitle"))}
@@ -556,7 +618,7 @@
         ${verdict}
         ${healthCard({ head: st.check === "done" })}
         ${meta}
-        ${st.check === "done" && st.scenario === "outage" ? hotspot() : ""}
+        ${st.check === "done" && (isOutage() || st.scenario === "failed") ? hotspot() : ""}
       </div></div>
       ${dock}
     </div>`;
@@ -571,8 +633,11 @@
   screens.fix = () => {
     const s = STEPS[st.step - 1];
     const meter = [1, 2, 3].map((n) => `<span class="${n < st.step ? "is-done" : n === st.step ? "is-current" : ""}"></span>`).join("");
-    const doneList = st.step > 1
-      ? `<p class="done-line">${icon("checkCircle")}<span>${STEPS.slice(0, st.step - 1).map((d) => t(d.title)).join(" · ")}<br><span class="muted">${t("stepDoneNote")}</span></span></p>`
+    const prev = STEPS.slice(0, st.step - 1);
+    const triedPrev = prev.filter((d) => !st.stepsSkipped.includes(d.key));
+    const skippedPrev = prev.filter((d) => st.stepsSkipped.includes(d.key));
+    const doneList = prev.length
+      ? `<p class="done-line">${icon("checkCircle")}<span>${triedPrev.length ? `${triedPrev.map((d) => t(d.title)).join(" · ")}<br><span class="muted">${t("stepDoneNote")}</span>` : ""}${skippedPrev.length ? `${triedPrev.length ? "<br>" : ""}<span class="muted">${t("skippedNote", { s: skippedPrev.map((d) => t(d.title)).join(" · ") })}</span>` : ""}</span></p>`
       : "";
     return `
     <div class="screen">
@@ -589,11 +654,12 @@
             <div class="expect">${icon("eye")}<div><strong>${t("whatSee")}</strong><p>${ports(t(s.see))}</p></div></div>
           </div>
         </article>
+        <p class="fineprint">${t("comfortNote")}</p>
       </div></div>
       <div class="dock">
         <p class="ask">${t("didFix")}</p>
         <div class="dock__row"><button class="btn btn--outline" type="button" data-act="still">${t("stillNot")}</button><button class="btn btn--primary" type="button" data-act="fixed">${icon("check")}${t("fixed")}</button></div>
-        <button class="btn-text btn-text--center" type="button" data-act="report">${t("skipReport")}</button>
+        <div class="link-row"><button class="btn-text" type="button" data-act="skip-step">${t("skipStep")}</button><button class="btn-text" type="button" data-act="report">${t("reportNow")}</button></div>
       </div>
     </div>`;
   };
@@ -624,8 +690,8 @@
       <div class="scroll"><div class="content">
         <p class="muted">${t("reportIntro")}</p>
         <section class="card card--pad field problem">
-          <div class="field__head"><h2 class="card-title">${t("problem")}</h2><span class="badge badge--auto">${icon("check")}${t("autoFilled")}</span></div>
-          <div><strong>${t("probRouter")}</strong><p>${t("probFound", { d: SAMPLE.checkDay[st.lang], t: SAMPLE.checkTime })}</p></div>
+          <div class="field__head"><h2 class="card-title">${t("problem")}</h2>${st.noCheck ? "" : `<span class="badge badge--auto">${icon("check")}${t("autoFilled")}</span>`}</div>
+          <div><strong>${st.noCheck ? t("probNoCheck") : t("probRouter")}</strong><p>${st.noCheck ? t("probNoCheckP") : t("probFound", { d: SAMPLE.checkDay[st.lang], t: SAMPLE.checkTime })}</p></div>
         </section>
         <section class="card card--pad field">
           <div class="field__head"><h2 class="card-title">${t("tried")}</h2>${st.tried.length || st.editingTried ? `<button class="btn-text" type="button" data-act="edit-tried" style="padding:4px">${st.editingTried ? t("doneEdit") : icon("pencil").replace('class=""', 'class="" style="width:16px;height:16px;vertical-align:-3px;margin-right:4px"') + t("edit")}</button>` : ""}</div>
@@ -636,7 +702,15 @@
           <div class="slots" role="radiogroup" aria-labelledby="slot-q">${SAMPLE.slots
             .map((s) => `<button class="slot" type="button" role="radio" aria-checked="${st.slot === s.id}" data-slot="${s.id}"><span class="d">${s.d[L()]}</span><span class="t">${s.t}</span></button>`)
             .join("")}</div>
+          <p class="small muted">${t("slotNote")}</p>
           <div class="notes"><div>${icon("person")}<span>${t("adult")}</span></div><div>${icon("info")}<span>${t("charges")}: <a href="#" data-noop>${t("chargesLink")}</a></span></div></div>
+        </section>
+        <section class="field">
+          <label class="section-title" for="note">${t("extra")} <span class="small muted" style="font-weight:400">(${t("optional")})</span></label>
+          <textarea class="input input--area" id="note" rows="3" placeholder="${esc(t("extraPh"))}">${esc(st.note)}</textarea>
+          <div class="attach">${st.photo
+            ? `<span class="attach__file">${icon("check")}${esc(t("attached", { f: st.photo }))}</span><button class="btn-text" type="button" data-act="remove-photo">${t("removePhoto")}</button>`
+            : `<input class="sr-only" id="photo" type="file" accept="image/*"><label class="btn-text attach__pick" for="photo">${icon("plus")}${t("attach")}</label>`}</div>
         </section>
         <section class="field">
           <label class="section-title" for="phone">${t("contact")}</label>
@@ -687,13 +761,15 @@
             ["is-done", "tlReceived", t("tlReceivedW", { n })],
             ["is-done", "tlAssigned", t("tlAssignedW")],
             ["is-done", "tlOnWay", "Wed 10:12 AM"],
+            ["is-done", "tlArrived", "Wed 10:41 AM"],
             ["is-now", "tlReopened", t("tlReopenedW")],
             ["is-next", "tlResolved", t("tlResolvedW")],
           ]
         : [
             ["is-done", "tlReceived", t("tlReceivedW", { n })],
             variant === "rescheduled" ? ["is-now", "tlAssigned", t("tlReschedW")] : ["is-done", "tlAssigned", t("tlAssignedW")],
-            variant === "rescheduled" ? ["is-next", "tlOnWay", t("tlOnWayNext", { name })] : ["is-now", "tlOnWay", t("tlOnWayW")],
+            variant === "rescheduled" ? ["is-next", "tlOnWay", t("tlOnWayNext", { name })] : ["is-now", "tlOnWay", variant === "delayed" ? t("tlLateW") : t("tlOnWayW")],
+            ["is-next", "tlArrived", t("tlArrivedW")],
             ["is-next", "tlResolved", t("tlResolvedW")],
           ];
     return `<section class="card card--pad"><h2 class="card-title" style="margin-bottom:12px">${t("progress")}</h2><ol class="timeline">${items
@@ -709,10 +785,15 @@
         <p>${t("newTime")}</p><div class="eta">2:00–4:00 PM</div><div class="eta-old"><span class="sr-only">Was </span>10 AM–12 PM</div><span class="next">${icon("clock")}${t("changedAt")}</span></section>
         <section class="card why"><p>${t("whyP", { name: SAMPLE.techFirst })}</p></section>`;
       actions = `<div class="dock"><div class="dock__row"><button class="btn btn--outline" type="button" data-act="pick-another">${t("pickAnother")}</button><button class="btn btn--primary" type="button" data-act="keep-time">${t("keepTime")}</button></div></div>`;
+    } else if (v === "delayed") {
+      hero = `<section class="verdict">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("clock")}</div><h2>${t("lateH")}</h2>
+        <p>${t("lateP")}</p><div class="eta">11:30 AM–12:15 PM</div><div class="eta-old"><span class="sr-only">${t("wasT", { t: "" })}</span>10:30–11:00 AM</div><span class="next">${icon("clock")}${t("updatedAt", { t: "10:58 AM" })}</span></section>
+        <section class="card why"><p>${t("lateWhy")}</p></section>`;
+      actions = `<div class="dock"><a class="btn btn--primary btn--block" href="tel:00000000000" data-noop>${icon("phone")}${t("callName", { name: SAMPLE.techFirst })}</a><div class="link-row"><button class="btn-text" type="button" data-act="pick-another">${t("changeTime")}</button><button class="btn-text" type="button" data-noop>${t("viewDetails")}</button></div></div>`;
     } else if (v === "reopened") {
       hero = `<section class="verdict">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("refresh")}</div><h2>${t("reopenH")}</h2>
-        <p>${t("reopenP", { name: SAMPLE.techFirst })}</p><div class="verdict__facts"><div><div class="k">${t("reopenTime")}</div><div class="v">3:00–4:00 PM</div></div><div><div class="k">${t("nextUpdate")}</div><div class="v">12:30 PM</div></div></div></section>`;
-      actions = `<div class="dock"><a class="btn btn--primary btn--block" href="tel:00000000000" data-noop>${icon("phone")}${t("callName", { name: SAMPLE.techFirst })}</a><div class="link-row"><button class="btn-text" type="button" data-act="pick-another">${t("changeTime")}</button><button class="btn-text" type="button" data-noop>${t("viewDetails")}</button></div></div>`;
+        <p>${t("reopenP")}</p><div class="verdict__facts"><div><div class="k">${t("reopenTime")}</div><div class="v">3:00–4:00 PM</div></div><div><div class="k">${t("nextUpdate")}</div><div class="v">12:30 PM</div></div></div></section>`;
+      actions = `<div class="dock"><a class="btn btn--primary btn--block" href="tel:00000000000" data-noop>${icon("phone")}${t("callSupport")}</a><div class="link-row"><button class="btn-text" type="button" data-act="pick-another">${t("changeTime")}</button><button class="btn-text" type="button" data-noop>${t("viewDetails")}</button></div></div>`;
     } else {
       hero = `<section class="verdict">${arcs("verdict__arcs")}<div class="verdict__icon">${icon("arrowRight")}</div><h2>${t("onWayH")}</h2>
         <p>${t("arriving")}</p><div class="eta">10:30–11:00 AM</div><span class="next">${icon("clock")}${t("nextUpd", { t: "10:45 AM" })}</span></section>`;
@@ -724,7 +805,7 @@
       <div class="scroll"><div class="content">
         <p class="reqline">${t("reqRef", { ref: `<b>${SAMPLE.ref}</b>` })}</p>
         ${hero}
-        ${techCard(v === "rescheduled")}
+        ${v === "reopened" ? "" : techCard(v === "rescheduled")}
         ${timeline(v)}
         ${hotspot()}
       </div></div>
@@ -819,14 +900,24 @@
     recheck: () => { runCheck(); render(false); },
     report: () => {
       st.tried = st.stepsTried.slice();
+      st.noCheck = false;
       go("complaint");
     },
+    retry: () => { st.scenario = "router"; runCheck(); render(false); },
+    "report-nocheck": () => { st.tried = []; st.noCheck = true; go("complaint"); },
+    "skip-step": () => {
+      const s = STEPS[st.step - 1];
+      if (!st.stepsSkipped.includes(s.key)) st.stepsSkipped.push(s.key);
+      if (st.step < 3) { st.step += 1; render(true, true); }
+      else { st.tried = st.stepsTried.slice(); st.noCheck = false; go("complaint"); }
+    },
+    "remove-photo": () => { st.photo = null; render(false); },
     notify: () => { st.notify = !st.notify; render(false); },
     still: () => {
       const s = STEPS[st.step - 1];
       if (!st.stepsTried.includes(s.key)) st.stepsTried.push(s.key);
       if (st.step < 3) { st.step += 1; render(true, true); }
-      else { st.tried = st.stepsTried.slice(); go("complaint"); }
+      else { st.tried = st.stepsTried.slice(); st.noCheck = false; go("complaint"); }
     },
     fixed: () => {
       st.fixedAt = st.step;
@@ -839,6 +930,8 @@
     send: () => {
       const input = document.getElementById("phone");
       if (input) st.phone = input.value.trim() || SAMPLE.phone;
+      const note = document.getElementById("note");
+      if (note) st.note = note.value;
       st.tracker = "onway";
       go("sent", { replace: true });
     },
@@ -868,6 +961,12 @@
       { id: "check-running", label: "Check running" },
       { id: "check-router", label: "S1 · Router not responding" },
       { id: "check-outage", label: "S1 · Outage in your area" },
+      { id: "check-failed", label: "Check couldn't finish" },
+    ] },
+    { group: "Outage changes", items: [
+      { id: "outage-noeta", label: "No restore time yet" },
+      { id: "outage-updated", label: "Restore time changed" },
+      { id: "outage-restored", label: "Outage fixed, still offline" },
     ] },
     { group: "Guided fix", items: [
       { id: "fix-1", label: "S2 · Step 1, restart router" },
@@ -881,12 +980,13 @@
     ] },
     { group: "Track", items: [
       { id: "tracker", label: "S4 · Technician on the way" },
+      { id: "delayed", label: "S4 · Technician running late" },
       { id: "rescheduled", label: "S4 · Visit rescheduled" },
     ] },
     { group: "Close the loop", items: [
       { id: "resolved", label: "S5 · Confirm it's working" },
       { id: "rate", label: "S5 · Rate the visit" },
-      { id: "reopened", label: "\"Not yet\" reopens request" },
+      { id: "reopened", label: "\"Still not working\" reopens request" },
     ] },
   ];
 
@@ -903,6 +1003,9 @@
       case "check-running": stack = ["dashboard", "support"]; st.screen = "check"; st.check = "running"; st.resolvedRows = 1; st.hold = true; break;
       case "check-router": stack = ["dashboard", "support"]; st.screen = "check"; routerDone(); break;
       case "check-outage": stack = ["dashboard", "support"]; st.screen = "check"; st.scenario = "outage"; st.check = "done"; break;
+      case "check-failed": stack = ["dashboard", "support"]; st.screen = "check"; st.scenario = "failed"; st.check = "done"; break;
+      case "outage-noeta": case "outage-updated": stack = ["dashboard", "support"]; st.screen = "check"; st.scenario = id; st.check = "done"; break;
+      case "outage-restored": stack = ["dashboard", "support"]; st.screen = "check"; st.scenario = "restored"; st.check = "done"; break;
       case "fix-1": case "fix-2": case "fix-3":
         routerDone(); stack = ["dashboard", "support", "check"]; st.screen = "fix"; st.step = +id.slice(-1);
         st.stepsTried = ["restart", "fibre"].slice(0, st.step - 1); break;
@@ -910,6 +1013,7 @@
       case "complaint": routerDone(); allTried(); st.slot = null; stack = ["dashboard", "support", "check", "fix"]; st.step = 3; st.screen = "complaint"; break;
       case "sent": routerDone(); allTried(); stack = ["dashboard", "support"]; st.screen = "sent"; break;
       case "tracker": routerDone(); allTried(); stack = ["dashboard", "support"]; st.screen = "tracker"; break;
+      case "delayed": routerDone(); allTried(); stack = ["dashboard", "support"]; st.screen = "tracker"; st.tracker = "delayed"; break;
       case "rescheduled": routerDone(); allTried(); stack = ["dashboard", "support"]; st.screen = "tracker"; st.tracker = "rescheduled"; break;
       case "resolved": routerDone(); allTried(); stack = ["dashboard", "support"]; st.screen = "resolved"; break;
       case "rate": routerDone(); allTried(); stack = ["dashboard", "support"]; st.screen = "resolved"; st.confirmed = true; st.rating = 5; st.tags = ["tagOnTime", "tagExplained"]; break;
@@ -970,7 +1074,13 @@
     if (d.rate) { st.rating = +d.rate; render(false); return; }
     if (d.tag) { st.tags = st.tags.includes(d.tag) ? st.tags.filter((x) => x !== d.tag) : st.tags.concat(d.tag); render(false); return; }
   });
-  document.addEventListener("input", (e) => { if (e.target.id === "phone") st.phone = e.target.value; });
+  document.addEventListener("input", (e) => {
+    if (e.target.id === "phone") st.phone = e.target.value;
+    if (e.target.id === "note") st.note = e.target.value;
+  });
+  document.addEventListener("change", (e) => {
+    if (e.target.id === "photo" && e.target.files && e.target.files[0]) { st.photo = e.target.files[0].name; render(false); }
+  });
 
   // reviewer sheet on phones
   const review = document.getElementById("review");

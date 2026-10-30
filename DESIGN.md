@@ -328,7 +328,7 @@ Hybrid: tonal layering does most of the work (white cards on a pale blue ground,
 
 Rounded, friendly, and graded by size: the larger the surface, the softer the corner. Port tags 4px, buttons 8px, inputs 10px, tiles, category cards, slots, done steps and the toast 12px, standard cards 14px, the verdict hero 18px, the dashboard and Support hero cards 22px. Chips, status pills, toggles, badges and the call pill are fully round. Icon badges, health-row nodes, timeline dots, instruction numbers, avatars and the celebrate mark are circles.
 
-**The Concentric Arcs Signature.** Every navy hero carries three concentric rings (radii 30, 62, 94 on a 200 grid, stroke 18) bleeding off one corner at 7% white. On the white checking-state verdict the same arcs drop to 5% navy. This is the app's own motif; reuse it only on hero cards.
+**The Concentric Arcs Signature.** Every navy hero carries three concentric rings (radii 30, 62, 94 on a 200 grid, stroke 18) centred just inside the bottom-right corner so they spread up and to the left like a Wi-Fi signal, at 6% white. Every hero uses the same corner, matching the app's own "Optimize your Wi-Fi" card. On the white checking-state verdict the same arcs drop to 5% navy. This is the app's own motif; reuse it only on hero cards.
 
 Icons are 24px-grid line icons at a 1.75 stroke with round caps and joins, drawn in currentColor. Icon badges hold them at 22px inside a 40px circle (30px and 17px inside category cards).
 
@@ -369,10 +369,10 @@ Word + icon + tint, always all three. A 16px icon, 13px Medium label, pill, padd
 - **Action dock:** white, top bar-edge shadow, one full-width button or a two-button row, optional 13px centred hint.
 
 ### Verdict Hero (signature)
-The diagnosis answer. Hero Navy, 18px radius, concentric arcs top right, a 44px translucent-white icon disc, a 21px balanced verdict sentence, On-Navy Secondary support line, and an optional two-column facts row under a 18% white hairline (12.5px labels, 20px tabular values). A "next update" pill in 14% white may follow. While checking it turns white with a Sky icon disc and the Card shadow. A landed verdict rises 8px into place over 0.5s.
+The diagnosis answer. Hero Navy, 18px radius, concentric arcs from the bottom-right corner, a 44px translucent-white icon disc, a 21px balanced verdict sentence, On-Navy Secondary support line, and an optional two-column facts row under a 18% white hairline (12.5px labels, 20px tabular values). A "next update" pill in 14% white may follow. While checking it turns white with a Sky icon disc and the Card shadow. A landed verdict rises 8px into place over 0.5s.
 
 ### Connection Health Entry Card
-Added at the top of Support, built from the dashboard's Wi-Fi hero: Hero Navy, 22px radius, arcs top right, a 19px title with a last-checked time, three compact rows (area network, fibre line, router) whose icons are Mint on Navy when working and Ember on Navy otherwise, and a full-width primary button.
+Added at the top of Support, built from the dashboard's Wi-Fi hero: Hero Navy, 22px radius, arcs from the bottom-right corner, a 19px title with a last-checked time, three compact rows (area network, fibre line, router) whose icons are Mint on Navy when working and Ember on Navy otherwise, and a full-width primary button.
 
 ### Health Rows
 The path from Nayatel to the home, one row per hop: a 36px circular node (Sky with Navy icon; Amber Soft or Green Soft when the hop is diagnosed), the hop name with a 12.5px Ink 3 sub-line, and a status chip at the end. Rows are separated by Line hairlines.
